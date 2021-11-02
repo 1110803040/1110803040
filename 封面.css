@@ -1,0 +1,110 @@
+.div1{
+    color: rgb(255, 255, 255);         
+    
+
+font-size: 50px;
+text-align: center;
+position: absolute;
+width:auto;
+height:50px;
+top:0px;
+right:0;
+bottom:70%;
+left:0;
+margin:auto;}
+.t1{text-shadow:
+    0 0 5px rgb(1, 231, 247),
+    0 0 15px rgb(1, 231, 247),
+    0 0 25px rgb(1, 231, 247),
+    0 0 50px rgb(1, 231, 247),
+    0 0 80px rgb(1, 231, 247),
+    0 0 120px rgb(1, 231, 247),
+    0 0 160px rgb(1, 231, 247),
+    0 0 200px rgb(1, 231, 247),
+    0 0 300px rgb(1, 231, 247),
+    0 0 400px rgb(1, 231, 247),
+    0 0 500px rgb(1, 231, 247);}
+.div2{
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    width:auto;
+    height:50px;
+    top:0%;
+    right:0%;
+    bottom:0;
+    left: 45%;;
+    margin:auto;
+}    
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    background-size: cover; 
+  }
+
+      a:link {color:rgb(66, 207, 160);}    /* 設定尚未點閱過的連結樣式 */
+      a:visited {color:#00c3ff;} /* 設定過去曾經閱過的連結 */
+      a:hover {color:rgb(198, 245, 253);}   /* 設定滑鼠游標指在連結位置上的樣式 */
+      a:active {color:#ffbb00;}  /* 設定上點擊過的連結樣式 */
+
+      .shape-ex11{
+        width: 150px;
+        height: 40px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        line-height: 40px;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        position: relative;
+        transition: all .3s linear;
+
+        
+    }
+    .shape-ex11 > p{
+        position: relative;
+        z-index: 1;
+    }
+    .shape-ex11::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: block;
+        box-sizing: border-box;
+        border-top: 1px solid rgb(255, 255, 255);
+        border-left: 1px solid rgb(255, 255, 255);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .3s linear;
+    }
+    .shape-ex11::after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: block;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgb(255, 255, 255);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all .3s linear;
+    }
+    .shape-ex11:hover::before,
+    .shape-ex11:hover::after{
+        width: 100%;
+        height: 100%;
+    }      
